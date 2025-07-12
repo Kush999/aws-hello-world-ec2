@@ -6,3 +6,17 @@ crash.log
 *.bak
 *.backup
 .terraform.lock.hcl
+
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+ENV/
+
+# SSH keys
+ec2-github-actions
+ec2-github-actions.pub
