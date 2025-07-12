@@ -6,7 +6,7 @@ app = Flask(__name__)
 def get_instance_id():
     try:
         url = "http://169.254.169.254/latest/meta-data/instance-id"
-        response = requests.get('url', timeout=1)
+        response = requests.get(url, timeout=1)
         if response.status_code == 200:
             return response.text
         else:
